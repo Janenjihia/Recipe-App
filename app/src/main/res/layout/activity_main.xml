@@ -17,6 +17,18 @@
         android:layout_marginTop="80dp"
         android:layout_marginEnd="13dp"
         android:src="@drawable/pasta" />
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/introductionEditText"
+        android:layout_above="@+id/findRecipeButton"
+        android:hint="@string/input_your_craved_meal"
+        android:fontFamily="@font/lobster"
+        android:textColor="@color/black"
+        android:background="@color/grey"
+        android:padding="5dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"/>
 
     <TextView
         android:id="@+id/appNameTextView"

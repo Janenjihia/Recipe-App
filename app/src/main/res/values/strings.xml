@@ -2,4 +2,5 @@
     <string name="app_name">Recipe</string>
     <string name="recipe_galore">Recipe galore</string>
     <string name="get_recipe">Get recipe</string>
+    <string name="input_your_craved_meal">Craved meal</string>
 </resources>
