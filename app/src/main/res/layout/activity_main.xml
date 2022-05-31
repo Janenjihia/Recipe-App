@@ -21,7 +21,7 @@
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/getRecipeButton"
+        android:id="@+id/findRecipeButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -32,6 +32,6 @@
         android:fontFamily="@font/lobster"
         android:text="@string/get_recipe"
         android:textColor="@color/black"
-        android:theme="@style/myButtonTheme"/>
+        android:theme="@style/myButtonTheme" />
 
 </RelativeLayout>
