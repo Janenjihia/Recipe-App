@@ -38,9 +38,8 @@ public class MainActivity  extends AppCompatActivity implements View.OnClickList
     @Override
     public void onClick(View v) {
         String location = mLocationEditText.getText().toString();
-        Log.d(TAG, location);
         Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
-        startActivity(intent);Toast.makeText(MainActivity.this, location, Toast.LENGTH_LONG).show();
-
+        intent.putExtra("location", location);
+        startActivity(intent);
     }
 }
