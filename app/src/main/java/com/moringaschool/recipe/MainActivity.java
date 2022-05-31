@@ -32,9 +32,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View v) {
         if(v == mFindRecipeButton) {
-            String location = mCravingEditText.getText().toString();
+            String craving = mCravingEditText.getText().toString();
+            Toast.makeText(MainActivity.this, "We satisfy all your cravings", Toast.LENGTH_LONG).show();
+
             Intent intent = new Intent(MainActivity.this, RecipeActivity.class);
-            intent.putExtra("location", location);
+            intent.putExtra("craving", craving);
             startActivity(intent);
         }
     }

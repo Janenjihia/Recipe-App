@@ -36,8 +36,6 @@ public class RecipeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_recipe);
         ButterKnife.bind(this);
 
-//        ArrayAdapter adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, recipes);
-//        mListView.setAdapter(adapter);
         MyRecipesArrayAdapter adapter = new MyRecipesArrayAdapter(this, android.R.layout.simple_list_item_1, recipes, cuisines);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
