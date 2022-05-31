@@ -37,21 +37,23 @@ public class RecipeActivity extends AppCompatActivity {
         ButterKnife.bind(this);
 
         MyRecipesArrayAdapter adapter = new MyRecipesArrayAdapter(this, android.R.layout.simple_list_item_1, recipes, cuisines);
+        mListView.setAdapter(adapter);
 
         mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-                String recipe = ((TextView)view).getText().toString();
+                String recipe = ((TextView) view).getText().toString();
                 Toast.makeText(RecipeActivity.this, recipe, Toast.LENGTH_SHORT).show();
             }
         });
 
-        mCravingTextView.setText("Here are all the recipes: " + craving);
-        Log.d("RestaurantsActivity", "In the onCreate method!");
-    }
+//        Log.d("RestaurantsActivity", "In the onCreate method!");
+
 
         Intent intent = getIntent();
         String craving = intent.getStringExtra("craving");
+        mCravingTextView.setText("Here are all the recipes: " + craving);
 
 
     }
+}
